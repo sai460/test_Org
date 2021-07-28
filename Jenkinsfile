@@ -3,7 +3,7 @@ pipeline {
         label "build_server"
     }
     
-    option{
+    options{
         timestamps()
     }
     stages {
