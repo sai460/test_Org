@@ -2,7 +2,10 @@ pipeline {
     agent {
         label "build_server"
     }
-
+    
+    option{
+        timestamps()
+    }
     stages {
         stage('Build') {
             steps {
