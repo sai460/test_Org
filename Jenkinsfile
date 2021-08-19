@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label "build_server"
-    }
+    agent any
     
     options{
         timestamps()
