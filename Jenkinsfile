@@ -23,7 +23,7 @@ pipeline {
     }
     post {
      always {
-       emailext body: "See ${BUILD_URL}", recipientProviders: [requestor()], subject: "Jenkins: ${JOB_NAME}: Build status is ${currentBuild.currentResult}"
+         emailext attachLog: true, body: "See ${BUILD_URL}", subject: "Jenkins: ${JOB_NAME}: Build status is ${currentBuild.currentResult}", to: 'yvagvsv@gmail.com'
      }
    }
 }
