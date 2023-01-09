@@ -18,6 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                currentBuild.currentResult="UNSTABLE"
             }
         }
     }
