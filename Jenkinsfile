@@ -18,8 +18,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                echo "${currentBuild}"
-                echo "8888888888888888888888888888888888888888888
+                echo "${currentBuild}.${currentResult}"
+                echo "8888888888888888888888888888888888888888888"
             }
         }
     }
